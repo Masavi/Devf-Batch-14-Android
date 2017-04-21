@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Convertidor</string>
+    <string name="text_pesos_textview">Pesos</string>
+    <string name="text_dolares_textview">Dólares</string>
+    <string name="text_dolares_to_pesos_btn">Dólares a Pesos</string>
+    <string name="text_pesos_to_dolares_btn">Pesos a Dólares</string>
+    <string name="message_empty_input">Necesitas ingresar una cantidad a convertir</string>
+</resources>
