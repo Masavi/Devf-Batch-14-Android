@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/DevfBatch14Android.iml" filepath="$PROJECT_DIR$/DevfBatch14Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/convertidor/convertidor.iml" filepath="$PROJECT_DIR$/convertidor/convertidor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" filepath="$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dolarestopesos/dolarestopesos.iml" filepath="$PROJECT_DIR$/dolarestopesos/dolarestopesos.iml" />
       <module fileurl="file://$PROJECT_DIR$/dolarestopesos/dolarestopesos.iml" filepath="$PROJECT_DIR$/dolarestopesos/dolarestopesos.iml" />
     </modules>
   </component>

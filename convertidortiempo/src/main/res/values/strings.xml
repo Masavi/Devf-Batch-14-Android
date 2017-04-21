@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ConvertidorTiempo</string>
+    <string name="app_description">Introduce un número de horas, minutos o segundos para ser convertidos a milisegundos</string>
+    <string name="text_btn_horas">Horas</string>
+    <string name="text_btn_minutos">Minutos</string>
+    <string name="text_btn_segundos">Segundos</string>
+    <string name="message_empty_input">Necesitas ingresar una cantidad para convertir a milisegundos</string>
+</resources>
