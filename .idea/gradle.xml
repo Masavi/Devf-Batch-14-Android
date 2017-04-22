@@ -11,7 +11,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/convertidor" />
             <option value="$PROJECT_DIR$/convertidortiempo" />
-            <option value="$PROJECT_DIR$/dolarestopesos" />
+            <option value="$PROJECT_DIR$/intents" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

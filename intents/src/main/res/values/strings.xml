@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Intents</string>
+    <string name="btn_link">Abrir un link</string>
+    <string name="btn_llamada">Hacer una llamada</string>
+    <string name="btn_streetview">Abrir Street View</string>
+    <string name="btn_app">Escoger una app</string>
+    <string name="btn_acceder">Acceder</string>
+    <string name="btn_foto">Tomar foto</string>
+    <string name="title_activity_second">SecondActivity</string>
+</resources>

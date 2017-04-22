@@ -1,1 +1,1 @@
-include ':app', ':convertidor', ':dolarestopesos', ':convertidortiempo'
+include ':app', ':convertidor', ':convertidortiempo', ':intents'
