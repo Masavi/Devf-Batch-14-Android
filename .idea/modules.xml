@@ -6,7 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/convertidor/convertidor.iml" filepath="$PROJECT_DIR$/convertidor/convertidor.iml" />
       <module fileurl="file://$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" filepath="$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtimepermission/runtimepermission.iml" filepath="$PROJECT_DIR$/runtimepermission/runtimepermission.iml" />
     </modules>
   </component>
 </project>

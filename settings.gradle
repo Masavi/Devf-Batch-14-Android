@@ -1,1 +1,1 @@
-include ':app', ':convertidor', ':convertidortiempo', ':intents'
+include ':app', ':convertidor', ':convertidortiempo', ':intents', ':runtimepermission', ':fragments'

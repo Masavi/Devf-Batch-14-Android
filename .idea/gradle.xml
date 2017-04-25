@@ -11,7 +11,9 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/convertidor" />
             <option value="$PROJECT_DIR$/convertidortiempo" />
+            <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/intents" />
+            <option value="$PROJECT_DIR$/runtimepermission" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
