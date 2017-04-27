@@ -1,11 +1,12 @@
-package com.masavi.fragments;
+package com.masavi.fragments.clase_fragmentos_1;
 
 import android.content.res.Configuration;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.masavi.fragments.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
         changeFragment(R.id.container1, BlankFragment.newInstance(R.color.color1));
 
         //Forma not so chida
-/*        BlankFragment blankfragment1 = new BlankFragment(R.color.color1);
-        changeFragment(R.id.container1, blankfragment1);*/
+        /*
+        BlankFragment blankfragment1 = new BlankFragment(R.color.color1);
+        changeFragment(R.id.container1, blankfragment1);
+        */
 
         //Obtenemos la orientación del dispositivo
         int orientation = getResources().getConfiguration().orientation;

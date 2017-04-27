@@ -1,4 +1,4 @@
-package com.masavi.fragments;
+package com.masavi.fragments.clase_fragmentos_1;
 
 
 import android.annotation.SuppressLint;
@@ -9,7 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
+
+import com.masavi.fragments.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
