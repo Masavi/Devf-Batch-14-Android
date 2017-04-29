@@ -5,5 +5,5 @@ package com.masavi.fragments.clase_ejercicio;
  */
 
 public interface OnExerciseInteractionListener {
-    public void aumentarContador();
+    public void fragmentToActivity(int fragmentTAG);
 }

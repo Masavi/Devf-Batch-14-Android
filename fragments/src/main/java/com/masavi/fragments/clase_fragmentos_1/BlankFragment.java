@@ -30,6 +30,11 @@ public class BlankFragment extends Fragment {
         // Required empty public constructor
     }
 
+    @SuppressLint("ValidFragment")
+    public BlankFragment(int resColor) {
+        mResColor = resColor;
+    }
+
     //Otra buena práctica para crear fragmentos, "fábrica" de instancias dentro de la misma clase
     public static BlankFragment newInstance(int resColor){  //Hacemos el método estático para poder llamarlo
         BlankFragment blankFragment = new BlankFragment();
@@ -48,12 +53,6 @@ public class BlankFragment extends Fragment {
 
         }
     }
-
-    @SuppressLint("ValidFragment")
-    public BlankFragment(int resColor) {
-        mResColor = resColor;
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

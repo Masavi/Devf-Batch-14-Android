@@ -10,16 +10,18 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.masavi.fragments.R;
+import com.masavi.fragments.clase_fragmentos_2.OnPruebaInteractionListener;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class EjercicioFragment extends Fragment implements OnExerciseInteractionListener {
+public class EjercicioFragment extends Fragment implements EjercicioFragmentsInterface{
 
     @BindView(R.id.fragment1_tv)
     TextView tvFragment1;
 
-    private OnFragmentInteractionListener mListener;
+    private OnExerciseInteractionListener mListener;
 
     public EjercicioFragment() {
         // Required empty public constructor
@@ -30,53 +32,39 @@ public class EjercicioFragment extends Fragment implements OnExerciseInteraction
         return fragment;
     }
 
-/*    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ejercicio, container, false);
-    }*/
-
-    /*
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }*/
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (context instanceof OnExerciseInteractionListener) {
+            mListener = (OnExerciseInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                    + " must implement OnExerciseInteractionListener");
         }
     }
 
     @Override
     public void onDetach() {
-        super.onDetach();
         mListener = null;
+        super.onDetach();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_ejercicio, container, false);
+        ButterKnife.bind(this, view);
+        return view;
     }
 
     @Override
     public void aumentarContador() {
-
+        int contador = Integer.parseInt(tvFragment1.getText().toString()) + 1;
+        tvFragment1.setText(contador + "");
     }
 
-    @OnClick(R.id.root_layout)
+    @OnClick(R.id.fragment1_layout)
     public void onClickFragment() {
-        //Cosas ocurren aquí
+        if (mListener != null)
+        mListener.fragmentToActivity(Constants.FRAGMENT_EJERCICIO_1);
     }
 }

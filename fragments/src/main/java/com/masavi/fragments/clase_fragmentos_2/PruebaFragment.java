@@ -15,13 +15,14 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-/**
+/*
  * A simple {@link Fragment} subclass.
  */
 public class PruebaFragment extends Fragment {
 
     @BindView(R.id.fragment_tv)
     TextView tvFragment;
+
     OnPruebaInteractionListener mListener;
 
     public PruebaFragment() {

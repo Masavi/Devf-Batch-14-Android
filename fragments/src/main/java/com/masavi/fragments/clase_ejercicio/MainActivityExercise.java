@@ -10,13 +10,10 @@ import com.masavi.fragments.clase_fragmentos_2.PruebaFragment;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivityExercise extends AppCompatActivity {
+public class MainActivityExercise extends AppCompatActivity implements OnExerciseInteractionListener{
 
     EjercicioFragment fragment;
     Ejercicio2Fragment fragment2;
-
-    public static final String TAG_FRAGMENT_PRUEBA = "TAG_FRAGMENT_EJERCICIO";
-    public static final String TAG_FRAGMENT_PRUEBA_2 = "TAG_FRAGMENT_EJERCICIO_2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,24 +21,24 @@ public class MainActivityExercise extends AppCompatActivity {
         setContentView(R.layout.activity_main_exercise);
         ButterKnife.bind(this);
 
+        fragment = EjercicioFragment.newInstance();
+        fragment2 = Ejercicio2Fragment.newInstance();
+
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.contenedor_1, fragment, TAG_FRAGMENT_PRUEBA)
+                .replace(R.id.contenedor_1, fragment)
                 .commit();
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.contenedor_2, fragment2, TAG_FRAGMENT_PRUEBA_2)
+                .replace(R.id.contenedor_2, fragment2)
                 .commit();
     }
 
-    //Esto es trampa, hay que obtener el onclick desde el fragmento
-    @OnClick(R.id.fragment1_layout)
-    public void clickFragmentLayout1(){
-        Fragment fragment = getSupportFragmentManager().findFragmentByTag(TAG_FRAGMENT_PRUEBA);
-        if (fragment != null){
-            if (fragment instanceof PruebaFragment){
-                PruebaFragment fragment1 = (PruebaFragment) fragment;
-                fragment1.setTextFragment("Lo que quieras");
-            }
+    @Override
+    public void fragmentToActivity(int fragmentTAG) {
+        if (fragmentTAG == Constants.FRAGMENT_EJERCICIO_1){
+            fragment2.aumentarContador();
+        } else if (fragmentTAG == Constants.FRAGMENT_EJERCICIO_2){
+            fragment.aumentarContador();
         }
     }
 }
