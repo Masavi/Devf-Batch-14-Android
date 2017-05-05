@@ -108,10 +108,10 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jsonMainObject = new JSONObject(jsonString);
 
             //Impresión de los PRIMEROS TRES elementos del JSON
-            Log.e("jsonEjercicio", "--- IDENTIDAD --- ");
             Log.e("jsonEjercicio", "Nombre: " + jsonMainObject.getString("firstName").toString());
             Log.e("jsonEjercicio", "Apellido: " + jsonMainObject.getString("lastName").toString());
             Log.e("jsonEjercicio", "Edad: " + jsonMainObject.getString("age").toString());
+
 
             //el CUARTO elemento del objeto JSON principal es otro JSON
             //así que lo asignamos a un nuevo objeto JSON
