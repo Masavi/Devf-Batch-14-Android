@@ -1,1 +1,1 @@
-include ':app', ':convertidor', ':convertidortiempo', ':intents', ':runtimepermission', ':fragments'
+include ':app', ':convertidor', ':convertidortiempo', ':intents', ':runtimepermission', ':fragments', ':claseobjetos', ':conceptosandroid', ':json', ':projectviews'
