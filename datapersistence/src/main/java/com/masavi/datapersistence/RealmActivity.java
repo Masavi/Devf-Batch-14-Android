@@ -75,4 +75,21 @@ public class RealmActivity extends AppCompatActivity {
         }
     }
 
+    public void updateUser() {
+        // Obtain a Realm instance
+        Realm realm = Realm.getDefaultInstance();
+        User user = new User();
+
+        user.setAge(21);
+        user.setEmail("emai@algo.com");
+        user.setName("El Erik!! SHi shi ");
+        user.setPhone(55443322);
+        user.setUserName("Yisus");
+        user.setId(4);
+
+        realm.beginTransaction();
+        realm.copyToRealmOrUpdate(user);
+        realm.commitTransaction();
+    }
+
 }

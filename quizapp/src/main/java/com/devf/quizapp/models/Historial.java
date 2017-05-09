@@ -50,6 +50,11 @@ public class Historial extends RealmObject{
     @Override
     public String toString() {
         return "nombreUsuario = '" + nombreUsuario +
-                ", puntuacion = " + puntuacion;
+                ", puntuacion = " + puntuacion +
+                ", id = " + id;
+    }
+
+    public String toHistorial(){
+        return nombreUsuario + " - Puntaje: " + puntuacion;
     }
 }

@@ -80,6 +80,6 @@ public class User extends RealmObject{
 
     @Override
     public String toString() {
-        return "nombre: " + name;
+        return "nombre: " + name + " , id: " + id;
     }
 }

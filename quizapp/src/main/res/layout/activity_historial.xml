@@ -5,15 +5,120 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.devf.quizapp.HistorialActivity">
+    tools:context="com.devf.quizapp.HistorialActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_historial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Aquí van los resultados del historial"
-        android:textColor="@android:color/white"
-        android:textSize="17sp" />
+        android:textSize="20dp"
+        android:textColor="#ffff"
+        android:text="Historial"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:background="#bfbfbf">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:text="Nombre"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:background="#a6a6a6"/>
+
+            <TextView
+                android:id="@+id/tv_historial_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="Nombre"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:background="#bfbfbf">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:text="Puntuacion"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:background="#a6a6a6"/>
+
+            <TextView
+                android:id="@+id/tv_historial_puntuacion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="Puntuacion"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:background="#bfbfbf">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:gravity="center_horizontal"
+                android:paddingTop="2dp"
+                android:text="ID"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:background="#a6a6a6"/>
+
+            <TextView
+                android:id="@+id/tv_historial_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="ID"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

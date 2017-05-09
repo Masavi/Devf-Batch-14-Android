@@ -53,11 +53,12 @@
 
         <TextView
             android:id="@+id/tv_historial"
+            android:clickable="true"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:textColor="#ffff"
             android:text="Historial"
             />

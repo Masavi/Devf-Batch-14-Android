@@ -22,9 +22,7 @@ public class MyApplication extends Application {
         /*
         * Inicio la configuración que va a tener realm
         */
-        RealmConfiguration config = new RealmConfiguration.Builder()
-                .build();
-
+        RealmConfiguration config = new RealmConfiguration.Builder().build();
         Realm.setDefaultConfiguration(config);
     }
 }

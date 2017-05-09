@@ -7,4 +7,6 @@ package com.devf.quizapp;
 public class Constants {
 
     public static final String INTENT_KEY_USERNAME = "USER_NAME";
+    public static final String INTENT_KEY_ID = "ID";
+    public static final String INTENT_KEY_SCORE = "SCORE";
 }

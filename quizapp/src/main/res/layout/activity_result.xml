@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.devf.quizapp.ResultActivity">
+
+    <TextView
+        android:id="@+id/historial_tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Bienvenido Ken"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <FrameLayout
+        android:id="@+id/result_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp">
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_inicio"
+        android:layout_below="@id/frame_layout"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Volver a inicio"/>
+
+</RelativeLayout>

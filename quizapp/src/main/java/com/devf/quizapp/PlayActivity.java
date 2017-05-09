@@ -5,10 +5,12 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.devf.quizapp.fragments.QuestionFragment;
+import com.devf.quizapp.fragments.ResultFragment;
 import com.devf.quizapp.models.Historial;
 import com.devf.quizapp.models.Pregunta;
 
@@ -23,29 +25,46 @@ import io.realm.RealmConfiguration;
 
 public class PlayActivity extends AppCompatActivity {
 
+    // TextView de nuestra actividad, donde mostramos el nombre de usuario
     @BindView(R.id.play_tv_username)
     TextView tvUserName;
 
+    // Variables donde almacenamos los intent extras
     private String mUserName;
+    private long userID;
 
+    // Lista de preguntas donde podemos agregar cada una de las preguntas
+    // que se mostrarán al cambiar cada fragmento
     private List<Pregunta> mListPreguntas = new ArrayList<>();
 
+    // Posición del jugador al moverse entre preguntas
     private int mQuestionPosition;
 
+    // Puntuación del jugador
     private int mContador;
+
+
+    // Inicialización de fragmentos
     private QuestionFragment mFragment;
+    private ResultFragment mResultFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Indicamos a nuestra actividad qué layout debe mostrar
         setContentView(R.layout.activity_play);
+        //Inicializamos ButterKnife
         ButterKnife.bind(this);
+        //Obtenemos la data del intent, es decir, la información en el bundle de extras
+        // de la actividad anterior
         getIntentData();
+        // Añadimos cada pregunta que será cargada al movernos entre fragmentos
         getData();
+        // Colocamos el userName, escrito en la primer actividad, en el TextView superior de esta actividad
         initViews();
 
         /*
-         * Inicio la primer pregunta
+         * Iniciamos la primer pregunta
          */
         changeFragment(QuestionFragment.newInstance(mListPreguntas.get(mQuestionPosition = 0).getTitle()));
     }
@@ -78,17 +97,20 @@ public class PlayActivity extends AppCompatActivity {
         if (extras != null) {
             //Obtenemos el username guardado en los extras
             mUserName = extras.getString(Constants.INTENT_KEY_USERNAME);
+            //Obtenemos el ID del user que está jugando
+            userID = extras.getLong(Constants.INTENT_KEY_ID);
         }
     }
 
     @OnClick(R.id.quiz_img_arrow_right)
     public void next() {
-
+        // En "respuesta" guardamos el valor de la respuesta elegida por el usuario
         int respuesta = mFragment.getValue();
-        if (respuesta == -1) {
+        // Si el usuario no ha seleccionado una respuesta
+        if (respuesta == -1){
             Toast.makeText(PlayActivity.this, "Debes elegir una respuesta " + mContador, Toast.LENGTH_LONG).show();
         } else {
-
+            // Si el usuario responde correctamente
             if (respuesta == mListPreguntas.get(mQuestionPosition).getValue()) {
                 mContador++;
             }
@@ -99,7 +121,12 @@ public class PlayActivity extends AppCompatActivity {
                 //Al terminar la lista de preguntas se actualiza la puntuación del usuario.
                 actualizarPuntuacion();
                 //Seguido, se muestra el historial de puntuaciones
-                startActivity(new Intent(PlayActivity.this, HistorialActivity.class));
+                Intent intent = new Intent(PlayActivity.this, ResultActivity.class);
+                //Mandamos data extra
+                intent.putExtra(Constants.INTENT_KEY_USERNAME, mUserName);
+                intent.putExtra(Constants.INTENT_KEY_SCORE, mContador);
+                //Lanzamos la actividad
+                startActivity(intent);
             }
         }
     }
@@ -128,9 +155,13 @@ public class PlayActivity extends AppCompatActivity {
         Historial historial = new Historial();
         historial.setNombreUsuario(mUserName);
         historial.setPuntuacion(mContador);
+        historial.setId(userID);
 
         realm.beginTransaction();
         realm.copyToRealmOrUpdate(historial);
         realm.commitTransaction();
+
+        Log.e("myLog", "¡Puntuación actualizada!: " + historial.toString() + "\n ID: " + userID);
     }
 }
+
