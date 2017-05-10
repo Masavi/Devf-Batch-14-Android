@@ -1,4 +1,4 @@
-package com.masavi.retrofit2;
+package com.devf.retrofit2;
 
 import org.junit.Test;
 

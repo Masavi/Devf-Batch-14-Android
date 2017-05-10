@@ -4,35 +4,52 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Devf-Batch-14-Android.iml" filepath="$PROJECT_DIR$/Devf-Batch-14-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/Devf-Batch-14-Android.iml" filepath="$PROJECT_DIR$/Devf-Batch-14-Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Devf-Batch-14-Android.iml" filepath="$PROJECT_DIR$/Devf-Batch-14-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/DevfBatch14Android.iml" filepath="$PROJECT_DIR$/DevfBatch14Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/claseobjetos/claseobjetos.iml" filepath="$PROJECT_DIR$/claseobjetos/claseobjetos.iml" />
       <module fileurl="file://$PROJECT_DIR$/claseobjetos/claseobjetos.iml" filepath="$PROJECT_DIR$/claseobjetos/claseobjetos.iml" />
       <module fileurl="file://$PROJECT_DIR$/claseobjetos/claseobjetos.iml" filepath="$PROJECT_DIR$/claseobjetos/claseobjetos.iml" />
       <module fileurl="file://$PROJECT_DIR$/conceptosandroid/conceptosandroid.iml" filepath="$PROJECT_DIR$/conceptosandroid/conceptosandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/conceptosandroid/conceptosandroid.iml" filepath="$PROJECT_DIR$/conceptosandroid/conceptosandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/conceptosandroid/conceptosandroid.iml" filepath="$PROJECT_DIR$/conceptosandroid/conceptosandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/convertidor/convertidor.iml" filepath="$PROJECT_DIR$/convertidor/convertidor.iml" />
       <module fileurl="file://$PROJECT_DIR$/convertidor/convertidor.iml" filepath="$PROJECT_DIR$/convertidor/convertidor.iml" />
       <module fileurl="file://$PROJECT_DIR$/convertidor/convertidor.iml" filepath="$PROJECT_DIR$/convertidor/convertidor.iml" />
       <module fileurl="file://$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" filepath="$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" />
       <module fileurl="file://$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" filepath="$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" filepath="$PROJECT_DIR$/convertidortiempo/convertidortiempo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datapersistence/datapersistence.iml" filepath="$PROJECT_DIR$/datapersistence/datapersistence.iml" />
       <module fileurl="file://$PROJECT_DIR$/datapersistence/datapersistence.iml" filepath="$PROJECT_DIR$/datapersistence/datapersistence.iml" />
       <module fileurl="file://$PROJECT_DIR$/datapersistence/datapersistence.iml" filepath="$PROJECT_DIR$/datapersistence/datapersistence.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/json/json.iml" filepath="$PROJECT_DIR$/json/json.iml" />
       <module fileurl="file://$PROJECT_DIR$/json/json.iml" filepath="$PROJECT_DIR$/json/json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/json/json.iml" filepath="$PROJECT_DIR$/json/json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projectviews/projectviews.iml" filepath="$PROJECT_DIR$/projectviews/projectviews.iml" />
       <module fileurl="file://$PROJECT_DIR$/projectviews/projectviews.iml" filepath="$PROJECT_DIR$/projectviews/projectviews.iml" />
       <module fileurl="file://$PROJECT_DIR$/projectviews/projectviews.iml" filepath="$PROJECT_DIR$/projectviews/projectviews.iml" />
       <module fileurl="file://$PROJECT_DIR$/quizapp/quizapp.iml" filepath="$PROJECT_DIR$/quizapp/quizapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/quizapp/quizapp.iml" filepath="$PROJECT_DIR$/quizapp/quizapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quizapp/quizapp.iml" filepath="$PROJECT_DIR$/quizapp/quizapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofit/retrofit.iml" filepath="$PROJECT_DIR$/retrofit/retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit/retrofit.iml" filepath="$PROJECT_DIR$/retrofit/retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit2/retrofit2.iml" filepath="$PROJECT_DIR$/retrofit2/retrofit2.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofit2/retrofit2.iml" filepath="$PROJECT_DIR$/retrofit2/retrofit2.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimepermission/runtimepermission.iml" filepath="$PROJECT_DIR$/runtimepermission/runtimepermission.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimepermission/runtimepermission.iml" filepath="$PROJECT_DIR$/runtimepermission/runtimepermission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/runtimepermission/runtimepermission.iml" filepath="$PROJECT_DIR$/runtimepermission/runtimepermission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/toolbar/toolbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/toolbar/toolbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/toolbar/toolbar.iml" />
     </modules>

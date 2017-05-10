@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">RetroFit2</string>
+    <string name="app_name">Retrofit2</string>
+    <!--string name="api_parameters">/v2.9/me?fields=id,name,birthday,education, email&access_token=</string-->
+    <string name="api_access_token">EAACEdEose0cBAHn7mOtKDOE70Ke82tc0xPdUfyN253nvr4AuaoZAZAM3l5UThNZCZB4hQjS8ZBQuuhsTVsQ0iBO0k1SoY5Lxgngm5TNQubaHjWSB4LGdtt8J3xuMejrUPKjIEn8JLsCRULwGALWgexOX73ac6ZAqgayCn2SeYtUgAbyFNltsaAw4sugal16VgZD</string>
 </resources>

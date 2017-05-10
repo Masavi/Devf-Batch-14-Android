@@ -1,4 +1,4 @@
-package com.masavi.retrofit2;
+package com.devf.retrofit2;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.masavi.retrofit2", appContext.getPackageName());
+        assertEquals("com.devf.retrofit2", appContext.getPackageName());
     }
 }
