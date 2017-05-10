@@ -1,1 +1,1 @@
-include ':app', ':convertidor', ':convertidortiempo', ':intents', ':runtimepermission', ':fragments', ':claseobjetos', ':conceptosandroid', ':json', ':projectviews', ':datapersistence', 'quizapp', 'toolbar', 'recyclerview'
+include ':app', ':convertidor', ':convertidortiempo', ':intents', ':runtimepermission', ':fragments', ':claseobjetos', ':conceptosandroid', ':json', ':projectviews', ':datapersistence', ':retrofit', ':retrofit2', 'quizapp', 'toolbar', 'recyclerview'
