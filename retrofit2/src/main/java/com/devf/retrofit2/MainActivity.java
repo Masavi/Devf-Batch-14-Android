@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.devf.retrofit2.api.ApiClient;
 import com.devf.retrofit2.api.ServiceGenerator;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -44,11 +45,15 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tv_correo)
     TextView tvCorreo;
 
+    private ImageView imageViewProfilePic;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        imageViewProfilePic = (ImageView) findViewById(R.id.profile_image);
 
         // Instanciamos el servicio de API
         ApiClient apiClient = ServiceGenerator.createService();
@@ -89,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
 
                         JSONObject jsonObjectFoto = jsonObject.getJSONObject("picture");
                         JSONObject jsonObjectFotoURL = jsonObjectFoto.getJSONObject("data");
+
+                        Picasso.with(imageViewProfilePic.getContext()).load(jsonObjectFotoURL.getString("url").toString()).into(imageViewProfilePic);
 
                     } catch (IOException e) {
                         e.printStackTrace();
