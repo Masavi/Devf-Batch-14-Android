@@ -76,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         SpotifyApi spotifyApi = ServiceGenerator.createService();
 
         spotifyApi.searchTracks(query, "track").enqueue(new Callback<TrackObject>() {
+
             @Override
             public void onResponse(Call<TrackObject> call, Response<TrackObject> response) {
                 if (response.code() == 200) {
